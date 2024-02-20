@@ -1,0 +1,189 @@
+/* colours */
+/*
+#F1F1E6
+#0648A7 
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  height: 100vh;
+  min-height: 800px;
+  background-color: #f1f1e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 800px;
+}
+
+.blue {
+  color: #0648a7;
+}
+
+.title {
+  font-size: 1.7em;
+  margin: 1em 0em 1.5em 0em;
+}
+
+.title-logo {
+  font-size: 2em;
+  margin: 0 0 0.5em;
+}
+
+.price-info {
+  margin: 1em;
+  text-align: center;
+  line-height: 2em;
+  font-size: 1.1em;
+}
+
+/* Basic styling */
+.main-container {
+  width: 80%;
+  margin: 2em auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  min-height: 60%;
+}
+
+/* Tab button styling */
+.tab {
+  float: left;
+  width: 33.33%;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s;
+  font-size: 1.15em;
+}
+
+/* Tab button hover effect */
+.tab:hover {
+  background-color: #ddd;
+}
+
+/* Content container styling */
+.tabcontent {
+  height: 100%;
+  display: none;
+  padding: 2em;
+  border-top: 1px solid #ccc;
+}
+
+/* Show tab content */
+.active {
+  /* display: block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+}
+
+.active-tab {
+  display: flex;
+  justify-content: center;
+  padding: 3em;
+}
+
+.select-tab-msg {
+  font-size: 2em;
+  padding-top: 2em;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Form 1 styles*/
+.form1-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  margin: 0 1em;
+}
+
+#checkbox2 {
+  margin-left: 0.5em;
+}
+
+.form-input-container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin: 1em;
+}
+
+#numberInput {
+  border-radius: 5px;
+  width: 6em;
+  border: 1px solid lightgray;
+  padding: 0.4em;
+  font-size: 1.2em;
+}
+
+#numberInput:focus {
+  outline: none;
+  background-color: #fffff1;
+}
+
+.total {
+  height: 2em;
+  width: 6em;
+  border: 1px solid lightgray;
+  background-color: white;
+  margin-left: auto;
+  border-radius: 5px;
+  padding: 0.4em;
+  font-size: 1.2em;
+  /* text-align: right; */
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.4);
+}
+
+.total-display {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 3em 0 0;
+}
+
+.total-title {
+  margin: 1em;
+}

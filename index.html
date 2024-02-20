@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>buildscan Cost Calculator</title>
+  </head>
+  <body>
+    <h1 class="title-logo blue">buildscan</h1>
+    <h1 class="title">Price Calculator</h1>
+    <div class="main-container">
+      <!-- Tab buttons -->
+      <button class="tab" onclick="openTab(event, 'tab1')">
+        Per Scan Pricing
+      </button>
+      <button class="tab" onclick="openTab(event, 'tab2')">
+        Subscription Pricing
+      </button>
+      <button class="tab" onclick="openTab(event, 'tab3')">
+        Builder Packages
+      </button>
+
+      <div id="tab0" class="tabcontent active-tab">
+        <p class="select-tab-msg blue">please select a tab</p>
+      </div>
+
+      <!-- Tab content -->
+      <div id="tab1" class="tabcontent">
+        <div class="form1-container">
+          <p class="price-info">
+            This calculator is for estimates only. Please contact us for exact
+            pricing<br />Minimum price per scan is $419.99
+          </p>
+          <form>
+            <div class="input1-container form-input-container">
+              <label for="numberInput">Square Footage:</label>
+              <input type="number" id="numberInput" name="numberInput" />
+              <div class="total total1">$ 419.99</div>
+            </div>
+            <div class="input2-container form-input-container">
+              <label for="checkbox1">Include a DWG File?:</label>
+              <input type="checkbox" id="checkbox1" name="checkbox1" />
+              <div class="total2 total">$ 0</div>
+            </div>
+            <div class="input3-container form-input-container">
+              <label for="checkbox2">Include a ESX File?:</label>
+              <input type="checkbox" id="checkbox2" name="checkbox2" />
+              <div class="total3 total">$ 0</div>
+            </div>
+          </form>
+          <div class="total-display">
+            <h2 class="total-title">SUBTOTAL</h2>
+            <div class="total total-total">$ 0</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="tab2" class="tabcontent">
+        <h3>Tab 2 Content</h3>
+        <p>This is the content of tab 2.</p>
+      </div>
+
+      <div id="tab3" class="tabcontent">
+        <h3>Tab 3 Content</h3>
+        <p>This is the content of tab 3.</p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
