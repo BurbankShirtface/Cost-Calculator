@@ -187,3 +187,22 @@ input[type="checkbox"] {
 .total-title {
   margin: 1em;
 }
+
+/***********************************/
+.tab3-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.builder-title {
+  font-size: 2em;
+  margin: 2em;
+}
+
+.builder-headings {
+  font-weight: bold;
+}

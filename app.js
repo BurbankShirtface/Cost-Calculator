@@ -66,7 +66,7 @@ function calculateTotals() {
   total1Display.textContent = "$ " + total1.toFixed(2);
 
   if (check1.checked) {
-    if (inputValue === 0 || inputValue < 5000) {
+    if (inputValue === 0 || inputValue < 1500) {
       total2 = 49.99;
       total2Display.textContent = `$ ${total2.toFixed(2)}`;
     } else if (tier === 1 || tier === 2) {
